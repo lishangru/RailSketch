@@ -1,0 +1,30 @@
+{
+  "name": "railsketch",
+  "version": "0.1.0",
+  "private": true,
+  "author": "Shangru Li <lishangru@lishangru.cn>",
+  "license": "CC-BY-NC-4.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview",
+    "typecheck": "vue-tsc --noEmit -p tsconfig.app.json",
+    "test": "tsc --noEmit -p tsconfig.tests.json && node scripts/run-tests.mjs",
+    "test:smoke": "node scripts/run-tests.mjs --smoke"
+  },
+  "dependencies": {
+    "pinia": "^2.2.6",
+    "uuid": "^11.1.1",
+    "vue": "^3.5.13"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.4",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "esbuild": "^0.25.12",
+    "sass": "^1.83.0",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.5",
+    "vue-tsc": "^2.2.0"
+  }
+}
